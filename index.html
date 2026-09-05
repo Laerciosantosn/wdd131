@@ -4,32 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meaninful Title</title>
-    <meta name="description" content="descrição da pagina">
+    <title>WDD 131 - Fundamentos da Web Dinâmica - Laercio Santos</title>
+    <meta name="description" content="WDD 131 - Fundamentos da Web Dinãmica - Laercio Santos - Página inicial">
     <meta name="author" content="Laércio Santos">
-    <link rel="stylesheet" href=":{filename}">
+    <link rel="stylesheet" href="estilos/base.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <h1>Conteudo do Header</h1>
+        <div class="content-header">
+            <h1>WDD 131 - Fundamentos da Web Dinâmica - Laercio Santos</h1>
+
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <img src="imagens/linkedIn.svg" alt="Icone do Linkedin">
+                    <a href="">Linkedin</a>
+                </li>
+                <li>
+                    <img src="imagens/school.svg" alt="">
+                    <a href="https://byupw.instructure.com/">Canvas</a>
+                </li>
+                <li>
+                    <img src="imagens/pen.svg" alt="Icone Lapis">
+                    <a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7">Escrituras</a>
+                </li>
+                <li>
+                    <img src="imagens/folder_open.svg" alt="Icone Pasta Aberta">
+                    <a href="#">Projeto Final</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="">Página Inicial</a>
-        <a href="">Projetos</a>
-        <a href="">Serviços</a>
-        <a href="">Fale Conosco</a>
-    </nav>
-    <main>
-        <p>Conteúdo do Main</p>
-    </main>
-    <aside>
-        <p>Conteúdo do Aside</p>
-    </aside>
+    <div class="content">
+        <main>
+            <h1 class="content">Laércio Santos</h1>
+
+            <div class="container-cards">
+                <div class="container">
+                    <section class="card">
+
+                        <div class="texto">
+                            <span>
+                                <div>
+                                    <img src="imagens/person.svg" alt="Icone de pessoa">
+                                </div>
+                                <h2>Sobre Mim</h2>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quam. Delectus at eaque
+                                pariatur?
+                                Veritatis.</p>
+                        </div>
+                        <img src="imagens/my_img_laercio.jpg" alt="Foto Laércio" class="myfoto">
+                    </section>
+
+                    <section class="card2">
+                        <span>
+                            <div>
+                                <img src="imagens/globe.svg" alt="Icone de um globo">
+                            </div>
+                            <h2>Cabrobó</h2>
+                        </span>
+                        <div class="texto2">
+                            <figure>
+                                <img src="imagens/cabrobo.jpg" alt="Imagem da Bandeira de Cabrobo">
+                                <figcaption>Bandeira Oficial de Cabrobó</figcaption>
+                            </figure>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ratione cum dicta!
+                                Architecto
+                                enim
+                                minus vel ad!</p>
+                        </div>
+                    </section>
+                </div>
+                <aside>
+                    <span class="cont_rec_title">
+                        <div>
+                            <img src="imagens/star.svg" alt="">
+                        </div>
+                        <h2>Recursos Web Dev</h2>
+                        <!-- <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina"> -->
+                    </span>
+                    <div class="container-links">
+                        <a class="comun-img fth1" href="https://dev.to/" class="card_rec_web">
+                            <img src="imagens/devto.svg" alt="Icone Comunidade Dev.to">
+                            Comunidade Dev.to
+                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                        </a>
+                        <a class="comun-img" href="https://www.smashingmagazine.com/">
+                            <img class="comun-img" src="imagens/smashingmagazine.svg" alt="Icone Revista Smashing">
+                            Revista Smashing
+                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                        </a>
+                        <a class="comun-img" href="https://css-tricks.com/">
+                            <img class="comun-img" src="imagens/css-tricks.svg" alt="Icone CSS Tricks">
+                            CSS Tricks
+                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                        </a>
+                        <a class="comun-img" href="https://www.w3schools.com/">
+                            <img class="comun-img" src="imagens/w3schools.svg" alt="Icone W3 Schools">
+                            W3 Schools
+                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                        </a>
+                        <a class="comun-img" href="https://www.w3schools.com/">
+                            <img class="comun-img" src="imagens/Udemy.svg" alt="Icone Udemy">
+                            Udemy
+                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                        </a>
+                        <a class="comun-img" href=#">
+                            <img class="comun-img fth2" src="imagens/image.svg" alt="Icone Imagem">
+                            Imagem de Espaço Reservado Lorm Picsum
+                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
     <footer>
-        <p>&copy;Laércio Santos | BYU-Pathway | WDD 131 2026</p>
+        <p>&copy;<span id="anoAtual"></span>🌿Laércio Santos | BYU-Pathway | <span class="folha-dir">🌿</span> São Paulo - Brasil</p>
+        <p>Última modificação: <img src="imagens/calendar.svg" alt=""><span id="ultimaModificacao"></span></p>
     </footer>
-    <script src="scripts/"></script>
+    <script src="scripts/obterdatas.js" defer></script>
 </body>
 
 </html>
