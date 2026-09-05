@@ -118,7 +118,7 @@ main .container-cards {
     box-shadow: var(--sombra-cards)
 }
 
-main span {
+main .cont-title {
     display: flex;
     border-bottom: 1px solid var(--cor-desaque-icones);
     margin-bottom: 10px;
@@ -155,11 +155,11 @@ section img {
     flex-direction: column;
 }
 
-span {
+.cont-title {
     align-items: center;
 }
 
-span div {
+.cont-title div {
     display: flex;
     width: 40px;
     height: 40px;
@@ -171,7 +171,7 @@ span div {
 }
 
 
-span img {
+.cont-title img {
     width: 25px;
 }
 
