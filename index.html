@@ -15,20 +15,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="content-header">
-            <h1>WDD 131 - Fundamentos da Web Dinâmica - Laercio Santos</h1>
+            <span id="course-title">WDD 131 - Fundamentos da Web Dinâmica - Laercio Santos</span>
 
         </div>
         <nav>
             <ul class="navigation">
                 <li>
                     <img src="imagens/linkedin.svg" alt="Icone do Linkedin">
-                    <a href="">Linkedin</a>
+                    <a href="https://www.linkedin.com/">Linkedin</a>
                 </li>
                 <li>
                     <img src="imagens/school.svg" alt="">
@@ -48,87 +48,87 @@
     </header>
     <div class="content">
         <main>
-            <h1 class="content">Laércio Santos</h1>
+            <h1 class="titulo">Laércio Santos</h1>
 
-            <div class="container-cards">
-                <div class="container">
-                    <section class="card">
-
-                        <div class="texto">
-                            <div class="cont-title">
-                                <div>
-                                    <img src="imagens/person.svg" alt="Icone de pessoa">
-                                </div>
-                                <h2>Sobre Mim</h2>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quam. Delectus at eaque
-                                pariatur?
-                                Veritatis.</p>
-                        </div>
-                        <img src="imagens/my_img_laercio.jpg" alt="Foto Laércio" class="myfoto">
-                    </section>
-
-                    <section class="card2">
+            <!-- <div class="container-cards"> -->
+            <section class="card sobre container">
+                <div class="elemento-card">
+                    <div class="texto">
                         <div class="cont-title">
                             <div>
-                                <img src="imagens/globe.svg" alt="Icone de um globo">
+                                <img src="imagens/person.svg" alt="Icone de pessoa">
                             </div>
-                            <h2>Cabrobó</h2>
+                            <h2>Sobre Mim</h2>
                         </div>
-                        <div class="texto2">
-                            <figure>
-                                <img src="imagens/cabrobo.jpg" alt="Imagem da Bandeira de Cabrobo">
-                                <figcaption>Bandeira Oficial de Cabrobó</figcaption>
-                            </figure>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ratione cum dicta!
-                                Architecto
-                                enim
-                                minus vel ad!</p>
-                        </div>
-                    </section>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quam. Delectus at eaque
+                            pariatur?
+                            Veritatis.</p>
+                    </div>
+                    <img src="imagens/my_img_laercio.jpg" alt="Foto Laércio" class="myfoto">
                 </div>
-                <aside>
-                    <div class="cont_rec_title cont-title">
+
+                <div class="elemento-card2">
+                    <div class="cont-title">
                         <div>
-                            <img src="imagens/star.svg" alt="">
+                            <img src="imagens/globe.svg" alt="Icone de um globo">
                         </div>
-                        <h2>Recursos Web Dev</h2>
-                        <!-- <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina"> -->
+                        <h2>Cabrobó</h2>
                     </div>
-                    <div class="container-links">
-                        <a class="card_rec_web comun-img fth1" href="https://dev.to/">
-                            <img src="imagens/devto.svg" alt="Icone Comunidade Dev.to">
-                            Comunidade Dev.to
-                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
-                        </a>
-                        <a class="comun-img" href="https://www.smashingmagazine.com/">
-                            <img class="comun-img" src="imagens/smashingmagazine.svg" alt="Icone Revista Smashing">
-                            Revista Smashing
-                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
-                        </a>
-                        <a class="comun-img" href="https://css-tricks.com/">
-                            <img class="comun-img" src="imagens/css-tricks.svg" alt="Icone CSS Tricks">
-                            CSS Tricks
-                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
-                        </a>
-                        <a class="comun-img" href="https://www.w3schools.com/">
-                            <img class="comun-img" src="imagens/w3schools.svg" alt="Icone W3 Schools">
-                            W3 Schools
-                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
-                        </a>
-                        <a class="comun-img" href="https://www.w3schools.com/">
-                            <img class="comun-img" src="imagens/udemy.svg" alt="Icone Udemy">
-                            Udemy
-                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
-                        </a>
-                        <a class="comun-img" href="reservado.html">
-                            <img class="comun-img fth2" src="imagens/image.svg" alt="Icone Imagem">
-                            Imagem de Espaço Reservado Lorm Picsum
-                            <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
-                        </a>
+                    <div class="texto2">
+                        <figure>
+                            <img src="imagens/cabrobo.jpg" alt="Imagem da Bandeira de Cabrobo">
+                            <figcaption>Bandeira Oficial de Cabrobó</figcaption>
+                        </figure>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ratione cum dicta!
+                            Architecto
+                            enim
+                            minus vel ad!</p>
                     </div>
-                </aside>
-            </div>
+                </div>
+            </section>
+
+            <section class="card recursos cardX">
+                <div class="cont_rec_title cont-title">
+                    <div>
+                        <img src="imagens/star.svg" alt="">
+                    </div>
+                    <h2>Recursos Web Dev</h2>
+                    <!-- <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina"> -->
+                </div>
+                <div class="container-links">
+                    <a class="card_rec_web comun-img fth1" href="https://dev.to/">
+                        <img src="imagens/devto.svg" alt="Icone Comunidade Dev.to">
+                        Comunidade Dev.to
+                        <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                    </a>
+                    <a class="comun-img" href="https://www.smashingmagazine.com/">
+                        <img class="comun-img" src="imagens/smashingmagazine.svg" alt="Icone Revista Smashing">
+                        Revista Smashing
+                        <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                    </a>
+                    <a class="comun-img" href="https://css-tricks.com/">
+                        <img class="comun-img" src="imagens/css-tricks.svg" alt="Icone CSS Tricks">
+                        CSS Tricks
+                        <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                    </a>
+                    <a class="comun-img" href="https://www.w3schools.com/">
+                        <img class="comun-img" src="imagens/w3schools.svg" alt="Icone W3 Schools">
+                        W3 Schools
+                        <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                    </a>
+                    <a class="comun-img" href="https://www.w3schools.com/">
+                        <img class="comun-img" src="imagens/udemy.svg" alt="Icone Udemy">
+                        Udemy
+                        <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                    </a>
+                    <a class="comun-img" href="reservado.html">
+                        <img class="comun-img fth2" src="imagens/image.svg" alt="Icone Imagem">
+                        Imagem de Espaço Reservado Lorm Picsum
+                        <img src="imagens/open_in_new.svg" alt="Icone abrir em uma nova pagina">
+                    </a>
+                </div>
+            </section>
+            <!-- </div> -->
         </main>
     </div>
     <footer>
@@ -136,7 +136,7 @@
             - Brasil</p>
         <p>Última modificação: <img src="imagens/calendar.svg" alt=""><span id="ultimaModificacao"></span></p>
     </footer>
-    <script src="scripts/obterdatas.js" defer></script>
+
 </body>
 
 </html>
