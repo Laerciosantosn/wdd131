@@ -47,46 +47,124 @@ footer {
 
 /* HEADER */
 
+/* #menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0.4rem;
+    right: 1.5rem;
+} */
+
+/* 
+#menu.open::before {
+    content: "❎";
+} */
+/* .open a {
+    display: block;
+} */
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+nav {
+    /* display: none; */
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: var(--cor-navegacao);
+}
+
 header p {
     padding: 1rem;
 }
 
-header nav {
-    background-color: var(--cor-navegacao);
+ 
 
-
+nav button {
+    right: auto;
+    justify-self: end;
+    align-self: se;
 }
 
-nav ul {
+#menu {
     display: flex;
-    flex-direction: column;
+    width: 1100px;
     list-style: none;
+    gap: 0.5rem;
+    /* text-align: center; */
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
-nav ul li {
+/* nav ulosi {
     flex: 1 1 100%;
     text-align: center;
     width: 100%;
     height: auto;
     padding: 1rem;
-}
+} */
 
-ul li a {
+#menu a {
     text-decoration: none;
     color: var(--cor-texto-secundaria-e-cards);
     display: block;
+    padding: 0.5rem;
 }
 
-ul li:hover {
-    background-color: var(--cor-hover-destaque);
-    border-radius: 4px;
+#btn-mobile {
+    display: none;
+    right: auto;
+    cursor: pointer;
+}
+
+#btn-mobile img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 780px) {
+    #btn-mobile {
+        display: block;
+    }
+        nav {
+            display: flex;
+            justify-content: end;
+            padding: 1rem;
+        }
+
+    #menu {
+        /* display: none; */
+        display: block;
+        position: absolute;
+        /* width: 100x; */
+        top: 109px;
+        right: 0;
+        background-color: #021B19;
+        height: 0;
+        transition: 0.6s ;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(25vh);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
 }
 
 
 /* MAIN */
 
 main {
-    padding:  1rem;
+    padding: 1rem;
 }
 
 main h1 {
@@ -123,4 +201,9 @@ figcaption {
 footer {
     font-size: 0.8rem;
     padding: 1rem;
+}
+
+.folha-dir {
+    display: inline-block;
+    transform: scaleX(-1);
 }

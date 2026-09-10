@@ -14,37 +14,40 @@
         rel="stylesheet">
     <link rel="stylesheet" href="estilos/templos.css">
     <link rel="stylesheet" href="estilos/templos-grandes.css">
-    <script src="scripts/templos.js"></script>
+    <script src="scripts/templos.js" defer></script>
 </head>
 
 <body>
     <header>
         <p>Álbum do Templo</p>
-        <nav>
-            <ul>
+        <nav id="nav">
+            <button id="btn-mobile">
+                <img src="imagens/menu.svg" >
+            </button>
+            <ul id="menu">
                 <li>
-                    <a href="">Página Inicial</a>
+                    <a class="active" href="/">Página Inicial</a>
                 </li>
-           
+
                 <li>
-                    <a href="">Antigo</a>
+                    <a href="/">Antigo</a>
                 </li>
-           
+
                 <li>
-                    <a href="">Novo</a>
+                    <a href="/">Novo</a>
                 </li>
-          
+
                 <li>
-                    <a href="">Grande</a>
+                    <a href="/">Grande</a>
                 </li>
-            
+
                 <li>
-                    <a href="">Pequeno</a>
+                    <a href="/">Pequeno</a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <h1>Page Title - Headin</h1>
         <figure>
@@ -90,7 +93,7 @@
         <p>&copy;<span id="anoAtual"></span>🌿Laércio Santos | BYU-Pathway | <span class="folha-dir">🌿</span> São Paulo
             - Brasil</p>
         <p>Última modificação: <img src="imagens/calendar.svg" alt=""><span id="ultimaModificacao"></span></p>
-    
+
 </body>
 
 </html>
