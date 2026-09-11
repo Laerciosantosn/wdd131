@@ -1,9 +1,9 @@
-:root {
+/* :root {
     --cor-footer-header: #0B342F;
     --cor-navegacao: #021B19;
     --cor-hover-destaque: #1E5B49;
 
-    --cor-separadores: #EDECE4;
+        --cor-separadores: #EDECE4;
 
     --cor-background: #FAF7F0;
 
@@ -17,7 +17,7 @@
     --fonte-textos: "Inter", sans-serif;
     --sombra-cards: 0 6px 20px rgba(0, 0, 0, 0, 0.06);
     --raio-bordas-card: 12px;
-}
+} */
 
 * {
     padding: 0;
@@ -33,47 +33,22 @@ body {
     background-color: var(--cor-background);
 }
 
-
-
 header,
 footer {
     background-color: var(--cor-footer-header);
     color: var(--cor-texto-secundaria-e-cards);
     font-family: var(--fonte-textos);
     text-align: center;
-
 }
 
 
 /* HEADER */
 
-/* #menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #000;
-    position: absolute;
-    top: 0.4rem;
-    right: 1.5rem;
-} */
-
-/* 
-#menu.open::before {
-    content: "❎";
-} */
-/* .open a {
-    display: block;
-} */
-
 .active::before {
     content: "📍";
-    /* just a wayfinding symbol for the user */
 }
 
 nav {
-    /* display: none; */
-    /* display: flex; */
-    /* justify-content: center; */
     background-color: var(--cor-navegacao);
 }
 
@@ -81,12 +56,9 @@ header p {
     padding: 1rem;
 }
 
- 
-
 nav button {
     right: auto;
     justify-self: end;
-    align-self: se;
 }
 
 #menu {
@@ -94,20 +66,9 @@ nav button {
     width: 1100px;
     list-style: none;
     gap: 0.5rem;
-    /* text-align: center; */
-    align-self: center;
-    align-items: center;
-    align-content: center;
     justify-content: space-evenly;
 }
 
-/* nav ulosi {
-    flex: 1 1 100%;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-} */
 
 #menu a {
     text-decoration: none;
@@ -138,16 +99,15 @@ nav button {
         }
 
     #menu {
-        /* display: none; */
         display: block;
         position: absolute;
-        /* width: 100x; */
         top: 109px;
         right: 0;
         background-color: #021B19;
         height: 0;
         transition: 0.6s ;
         z-index: 1000;
+        align-content: center;
         visibility: hidden;
         overflow-y: hidden;
     }
@@ -156,7 +116,6 @@ nav button {
         height: calc(25vh);
         visibility: visible;
         overflow-y: auto;
-        /* display: block; */
     }
 }
 
