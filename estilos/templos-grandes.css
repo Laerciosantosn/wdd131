@@ -1,24 +1,3 @@
-:root {
-    --cor-footer-header: #0B342F;
-    --cor-navegacao: #021B19;
-    --cor-hover-destaque: #1E5B49;
-
-    --cor-separadores: #EDECE4;
-
-    --cor-background: #FAF7F0;
-
-    --cor-icone-destaque: #F59E0B;
-    --cor-desaque-icones: #D4AF37;
-
-    --cor-texto-principal: #1C2A24;
-    --cor-texto-secundaria-e-cards: #FFFFFF;
-
-    --fonte-titulos: "Poppins", sans-serif;
-    --fonte-textos: "Inter", sans-serif;
-    --sombra-cards: 0 6px 20px rgba(0, 0, 0, 0, 0.06);
-    --raio-bordas-card: 12px;
-}
-
 @media screen and (min-width: 780px) {
     nav {
         display: flex;
@@ -26,10 +5,19 @@
         padding: 1rem;
     }
 
+    #menu {
+        width: 1100px;
+    }
+
+    #menu a.active {
+        background-color: var(--cor-hover-destaque);
+        border-radius: 8px;
+    }
+
     main {
         max-width: 1100px;
         margin: 0 auto;
-        
+
         display: grid;
 
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -48,6 +36,7 @@
         display: block;
         margin: 0 auto;
     }
+
     figcaption {
         font-family: var(--fonte-textos);
         font-weight: 500;
