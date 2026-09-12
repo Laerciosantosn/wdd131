@@ -41,13 +41,6 @@ footer {
     text-align: center;
 }
 
-
-/* HEADER */
-
-/* .active::before {
-    content: "📍";
-} */
-
 nav {
     background-color: var(--cor-navegacao);
 }
@@ -104,7 +97,6 @@ nav button {
     }
 
     #menu {
-        /* display: flex; */
         display: block;
         width: 100%;
         text-align: center;
@@ -119,15 +111,6 @@ nav button {
         visibility: hidden;
         overflow-y: hidden;
     }
-
-    /* #menu li {
-        text-align: center;
-    }
-
-    #menu a {
-        display: block;
-        text-align: center;
-    } */
 
     #nav.active #menu {
         height: calc(25vh);
