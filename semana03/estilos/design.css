@@ -1,0 +1,60 @@
+body {
+    font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+marquee {
+    padding: 1rem;
+    background-color: #eee;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "titulo titulo"
+            "artigo lista"
+            "callout callout";
+}
+
+h2 {
+    color: navy;
+    text-align: start;
+    grid-area: titulo;
+}
+section:nth-child(1) {
+    grid-area: artigo;
+}
+section:nth-last-child{
+    grid-area: lista;
+    
+}
+
+
+article p {
+    text-align: justify;
+}
+
+.callout {
+    color: #fff;
+    background-color: #702963;
+    padding: 8px;
+    grid-area: callout;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+}
