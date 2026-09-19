@@ -144,6 +144,16 @@ aside {
     background-color: var(--cor-background-cards);
 }
 
+.weather-img{
+    display: flex;
+    width: 100%;
+}
+.img-clima {
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+
 .header img {
     width: 30px;
     height: 30px;
@@ -191,5 +201,6 @@ aside {
     
     footer {
         margin-top: 8px;
+        font-size: 14px;
     }
 }

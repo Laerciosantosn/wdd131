@@ -43,68 +43,68 @@
             <h2>Date</h2>
          </div>
 
-         <table>
-            <tbody>
-               <aside>
-                  <div class="container-linha">
-                     <img src="imagens/area.svg" alt="Icone de um mapa">
-                     <div class="name-value">
-                        <p class="name">Area:</p>
-                           <p class="value">587,041 sq Km</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/population.svg" alt="Icone de população">
-                     <div class="name-value">
-                        <p class="name">Population</p>
-                        <p class="value">24,691,018</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/capital-green.svg" alt="Icone representando uma capital">
-                     <div class="name-value">
-                        <p class="name">Capital:</p>
-                        <p class="value">Antananrivo</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/chat_bubble.svg" alt="Icone de um chat">
-                     <div class="name-value">
-                        <p class="name">Language:</p>
-                        <p class="value">Malagasy, French</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/currency.svg" alt="Icone de moedas">
-                     <div class="name-value">
-                        <p class="name">Currency</p>
-                        <p class="value">Malagasy Ariary</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/schedule.svg" alt="Icone de um relogio">
-                     <div class="name-value">
-                        <p class="name">Time Zone:</p>
-                        <p class="value">UTC+3</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/call.svg" alt="Icon de um telefone">
-                     <div class="name-value">
-                        <p class="name">Calling Code:</p>
-                        <p class="value">+261</p>
-                     </div>
-                  </div>
-                  <div class="container-linha">
-                     <img src="imagens/globe-green.svg" alt="Icone de um globo">
-                     <div class="name-value">
-                        <p class="name">Internet TLD</p>
-                        <p class="value">.mg</p>
-                     </div>
-                  </div>
-               </aside>
-            </tbody>
-         </table>
+         <!-- <table> -->
+         <!-- <tbody> -->
+         <aside>
+            <div class="container-linha">
+               <img src="imagens/area.svg" alt="Icone de um mapa">
+               <div class="name-value">
+                  <p class="name">Area:</p>
+                  <p class="value">587,041 sq Km</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/population.svg" alt="Icone de população">
+               <div class="name-value">
+                  <p class="name">Population</p>
+                  <p class="value">24,691,018</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/capital-green.svg" alt="Icone representando uma capital">
+               <div class="name-value">
+                  <p class="name">Capital:</p>
+                  <p class="value">Antananrivo</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/chat_bubble.svg" alt="Icone de um chat">
+               <div class="name-value">
+                  <p class="name">Language:</p>
+                  <p class="value">Malagasy, French</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/currency.svg" alt="Icone de moedas">
+               <div class="name-value">
+                  <p class="name">Currency</p>
+                  <p class="value">Malagasy Ariary</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/schedule.svg" alt="Icone de um relogio">
+               <div class="name-value">
+                  <p class="name">Time Zone:</p>
+                  <p class="value">UTC+3</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/call.svg" alt="Icon de um telefone">
+               <div class="name-value">
+                  <p class="name">Calling Code:</p>
+                  <p class="value">+261</p>
+               </div>
+            </div>
+            <div class="container-linha">
+               <img src="imagens/globe-green.svg" alt="Icone de um globo">
+               <div class="name-value">
+                  <p class="name">Internet TLD</p>
+                  <p class="value">.mg</p>
+               </div>
+            </div>
+         </aside>
+         <!-- </tbody>
+         </table> -->
          <!-- </aside> -->
       </section>
       <section class="cards">
@@ -113,28 +113,41 @@
             <h2>Weather</h2>
          </div>
          <aside>
-            <picture>
-               <img src="imagens/snowing.webp" alt="Iconde uma nuvem nevando">
+            <picture class="weather-img">
+               <img class="img-clima" src="imagens/snowing.webp" alt="Iconde uma nuvem nevando">
             </picture>
 
             <table>
                <tbody>
-                  <tr>
-                     <th class="name">Temperature:</th>
-                     <p class="value" id="temperature">10</p>
-                  </tr>
-                  <tr>
-                     <th class="name">Conditions:</th>
-                     <p class="value">Clear Sky</p>
-                  </tr>
-                  <tr>
-                     <th class="name">Wind:</th>
-                     <p class="value" id="wind">5</p>
-                  </tr>
-                  <tr>
-                     <th class="name">Wind Chill:</th>
-                     <p class="value" id="windChill"></p>
-                  </tr>
+
+                  <div class="container-linha">
+                     <img src="imagens/thermometer.png" alt="Icone de um globo">
+                     <div class="name-value">
+                        <p class="name">Temperature:</p>
+                        <p class="value" id="temperature">10</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/cold.svg" alt="Icone de um globo">
+                     <div class="name-value">
+                        <p class="name">Conditions:</p>
+                        <p class="value">Clear Sky</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/wind.svg" alt="Icone de um globo">
+                     <div class="name-value">
+                        <p class="name">Wind:</p>
+                        <p class="value" id="wind">5</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/thermometer.png" alt="Icone de um globo">
+                     <div class="name-value">
+                        <p class="name">Wind Chill:</p>
+                        <p class="value" id="windChill"></p>
+                     </div>
+                  </div>
                </tbody>
             </table>
          </aside>
