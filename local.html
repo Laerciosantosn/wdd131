@@ -9,8 +9,7 @@
    <meta name="author" content="Laércio Santos">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="estilos/mobile.css">
    <link rel="stylesheet" href="estilos/tablet.css">
@@ -22,7 +21,7 @@
 <body>
    <header>
       <div class="logo">
-         <img class="img-header" src="imagens/burj-khalifa.png" alt="">
+         <img class="img-header" src="imagens/burj-khalifa.webp" alt="Imagem da torre Burj khalifa em Dubai">
          <div class="texto">
             <h1>Dubai</h1>
             <p>The City of Dreams</p>
@@ -32,82 +31,109 @@
    </header>
    <nav></nav>
    <main>
-      <picture>
-         <source media="" srcset="">
-         <source media="" srcset="">
-         <source media="" srcset="">
-         <source media="" srcset="">
-         <img src="" alt="">
+      <picture class="piture-img">
+         <source media="(min-width: 1000px)" srcset="imagens/local-grande.webp">
+         <source media="(min-width: 500px)" srcset="imagens/local-media.webp">
+         <img src="imagens/local-pequena1.webp" alt="Imagen por do sol Dubai murj Burj khalifa">
       </picture>
       <section class="cards">
-         <aside>
+         <!-- <aside> -->
+         <div class="header">
+            <img src="imagens/templo-branco.svg" alt="Icone de um museu na cor branca">
             <h2>Date</h2>
+         </div>
 
-            <table>
-               <tbody>
-                  <tr>
-                     <th>Area:</th>
-                     <td>587,041 sq Km</td>
-                  </tr>
-                  <tr>
-                     <th>Population</th>
-                     <td>24,691,018</td>
-                  </tr>
-                  <tr>
-                     <th>Capital:</th>
-                     <td>Antananrivo</td>
-                  </tr>
-                  <tr>
-                     <th>Language:</th>
-                     <td>Malagasy, French</td>
-                  </tr>
-                  <tr>
-                     <th>Currency</th>
-                     <td>Malagasy Ariary</td>
-                  </tr>
-                  <tr>
-                     <th>Time Zone:</th>
-                     <td>UTC+3</td>
-                  </tr>
-                  <tr>
-                     <th>Calling Code:</th>
-                     <td>+261</td>
-                  </tr>
-                  <tr>
-                     <th>Internet TLD</th>
-                     <td>.mg</td>
-                  </tr>
-               </tbody>
-            </table>
-         </aside>
+         <table>
+            <tbody>
+               <aside>
+                  <div class="container-linha">
+                     <img src="imagens/area.svg" alt="Icone de um mapa">
+                     <div class="name-value">
+                        <p class="name">Area:</p>
+                           <p class="value">587,041 sq Km</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/population.svg" alt="Icone de população">
+                     <div class="name-value">
+                        <p class="name">Population</p>
+                        <p class="value">24,691,018</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/capital-green.svg" alt="Icone representando uma capital">
+                     <div class="name-value">
+                        <p class="name">Capital:</p>
+                        <p class="value">Antananrivo</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/chat_bubble.svg" alt="Icone de um chat">
+                     <div class="name-value">
+                        <p class="name">Language:</p>
+                        <p class="value">Malagasy, French</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/currency.svg" alt="Icone de moedas">
+                     <div class="name-value">
+                        <p class="name">Currency</p>
+                        <p class="value">Malagasy Ariary</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/schedule.svg" alt="Icone de um relogio">
+                     <div class="name-value">
+                        <p class="name">Time Zone:</p>
+                        <p class="value">UTC+3</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/call.svg" alt="Icon de um telefone">
+                     <div class="name-value">
+                        <p class="name">Calling Code:</p>
+                        <p class="value">+261</p>
+                     </div>
+                  </div>
+                  <div class="container-linha">
+                     <img src="imagens/globe-green.svg" alt="Icone de um globo">
+                     <div class="name-value">
+                        <p class="name">Internet TLD</p>
+                        <p class="value">.mg</p>
+                     </div>
+                  </div>
+               </aside>
+            </tbody>
+         </table>
+         <!-- </aside> -->
       </section>
       <section class="cards">
-         <aside>
+         <div class="header">
+            <img src="imagens/clear_day.svg" alt="Icone do Sol em um dia com ceu limpo">
             <h2>Weather</h2>
+         </div>
+         <aside>
             <picture>
-               <source media="" srcset="">
-               <source media="" srcset="">
-               <source media="" srcset="">
-               <img src="" alt="">
+               <img src="imagens/snowing.webp" alt="Iconde uma nuvem nevando">
             </picture>
 
             <table>
                <tbody>
                   <tr>
-                     <th>Area:</th>
-                     <td>587,041 sq Km</td>
+                     <th class="name">Temperature:</th>
+                     <p class="value" id="temperature">10</p>
                   </tr>
                   <tr>
-                     <th>Population</th>
-                     <td>24,691,018</td>
+                     <th class="name">Conditions:</th>
+                     <p class="value">Clear Sky</p>
                   </tr>
                   <tr>
-                     <th>Capital:</th>
-                     <td>Antananrivo</td>
+                     <th class="name">Wind:</th>
+                     <p class="value" id="wind">5</p>
                   </tr>
                   <tr>
-                     <th>Language:</th>
-                     <td>Malagasy, French</td>
+                     <th class="name">Wind Chill:</th>
+                     <p class="value" id="windChill"></p>
                   </tr>
                </tbody>
             </table>
@@ -117,7 +143,8 @@
    <footer>
       <p>&copy;<span id="anoAtual"></span></p>Laércio Santos | BYU-Pathway | <span class="folha-dir">🌿</span> São Paulo
       - Brasil</p>
-      <p>Última modificação: <img src="imagens/calendar.svg" alt=""><span id="ultimaModificacao"></span></p>
+      <p>Última modificação: <img src="imagens/calendar.svg" alt="Iconde de um calendario"><span
+            id="ultimaModificacao"></span></p>
 
    </footer>
 </body>
