@@ -33,9 +33,7 @@
 
 body {
     display: flex;
-    /* height: 100vh; */
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 /* Mobile pequeno até 480px 📱 Mobile até 767px */
@@ -111,7 +109,6 @@ picture {
     width: 100%;
     height: auto;
     border-bottom-right-radius: 16px;
-    /* background-color: var(--cor-main); */
     overflow: hidden;
 
 }
