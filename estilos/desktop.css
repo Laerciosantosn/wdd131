@@ -1,3 +1,42 @@
 /* 🖥️ Desktop grande 1440px ou mais */
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+
+    main {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1440px;
+        position: relative;
+    }
+
+    .text-hero {
+        width: 600px;
+        height: auto;
+        top: 15%;
+        left: 40%;
+    }
+
+    .text-hero h2 {
+        font-size: 6rem;
+    }
+         .text-hero p {
+            font-size: 2rem;
+         }
+
+    .cards {
+        max-width: 400px;
+        position: absolute;
+    }
+
+    .cad1 {
+        top: 16px;
+        left: 16px;
+    }
+
+    .cad2 {
+        top: 600px;
+        right: 16px;
+    }
+
+
+}
