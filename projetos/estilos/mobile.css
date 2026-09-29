@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    padding: 0.5rem;
+    background-color: #d8edff;
+    text-align: center;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    max-width: 60rem;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background-color: #d8edff;
+    padding: 1rem;
+
+}
+
+li div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px ;
+}
+
+/* Tabela */
+.paleta-cores {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+.paleta-cores caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Cabeçalho */
+.paleta-cores th {
+    border: 1px solid #ccc;
+    padding: 12px;
+    background-color: #f4f4f4;
+}
+
+/* Células */
+.paleta-cores td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Cores da paleta Background*/
+
+.header-cor {
+    background-color: #121212;
+    color: #F5F5F5;
+}
+
+.main-cor {
+    background-color: #1E1E1E;
+    color: #F5F5F5;
+}
+
+.card-cor {
+    background-color: #2A2A2A;
+    color: #F5F5F5;
+}
+
+.botao-cor {
+    background-color: #FF6B00;
+    color: #FFFFFF;
+}
+
+.footer-cor {
+    background-color: #0F2D3A;
+    color: #F5F5F5;
+}
+
+.texto-cor {
+    background-color: #F5F5F5;
+    color: #121212;
+}
+
+
+/* FONTES */
+
+.font-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.font-table caption {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.font-table th,
+.font-table td {
+    border: 1px solid #D1D5DB;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.font-table th {
+    background-color: #F3F4F6;
+    color: #111827;
+}
+
+/* Prévias das fontes */
+/* Fundos claros para contrastar com a tabela de cores */
+
+.poppins-light {
+    background-color: #F8FAFC;
+    color: #111827;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.poppins-medium {
+    background-color: #E5E7EB;
+    color: #111827;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.hero-font {
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.card-font {
+    background-color: #DCFCE7;
+    color: #14532D;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.button-font {
+    background-color: #FED7AA;
+    color: #9A3412;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.inter-font {
+    background-color: #E0F2FE;
+    color: #0C4A6E;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.wireframe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile img {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.mobile img {
+    max-width: 250px;
+}
+.desktop img {
+    max-width: 600px;
+}
