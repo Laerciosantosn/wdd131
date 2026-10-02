@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Web</title>
+    <meta name="description" content="descrição da pagina">
+    <meta name="author" content="Laércio Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+    <main>
+        <form method="GET" action="avaliacao.html" class="fw1">
+
+            <label>
+                Nome do produto
+                <select name="tema">
+                    <option value="">Escolha um produto</option>
+                    <option value="">Desenvolvimetno de Software</option>
+                    <option value="">Profissional Criativo</option>
+                    <option value="">Tecnologia da Informação</option>
+                    <option value="">Analista de Dados</option>
+                    <option value="">Construção</option>
+                    <option value="">Manufatra</option>
+                    <option value="">Negócios</option>
+                    <option value="">Segurança cibernetica</option>
+                </select>
+                Classificação Geral
+                <div id="radio-container">
+
+                    <label class="radio">
+                        ⭐<input type="radio" name="publico" value="1">
+                    </label>
+                    <label class="radio">
+                        ⭐⭐<input type="radio" name="publico" value="2">
+                    </label>
+                    <label class="radio">
+                        ⭐⭐⭐<input type="radio" name="publico" value="3">
+                    </label>
+                    <label class="radio">
+                        ⭐⭐⭐⭐<input type="radio" name="publico" value="4">
+                    </label>
+                    <label class="radio">
+                        ⭐⭐⭐⭐⭐<input type="radio" name="publico" value="5e">
+                    </label>
+                </div>
+            </label>
+            <label>Data de Instalação
+                <input type="date" name="data">
+            </label>
+            <div>Quais recursos você achou úteis no produto?<br>(Marque todos que se aplicam)</div>
+            <label class="edicao">
+                <input type="checkbox" name="edicao" value="sim">Edição de Foto
+            </label>
+            <label>
+                <input type="checkbox" name="programacao" value="sim">Programacao
+            </label>
+            <label>
+                <input type="checkbox" name="processador" value="sim">Pré-processador
+            </label>
+            <label>
+                <input type="checkbox" name="cliente" value="sim">Cliente FTP
+            </label>
+
+            <label for="mensagem">
+                <div>Avaliação Escrita<span>(Opcional)</span></div>
+                <textarea name="mensagem" id="mensagem" rows="6" cols="40">
+
+                  </textarea>
+            </label>
+
+            <label for="nome">
+                <div>Seu Nome <span>(Opcional)</span></div>
+                <input type="text" name="nome">
+            </label>
+            </label>
+            <input type="submit" value="Publicar Avaliação">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="anoAtual"></span>Laércio Santos | BYU-Pathway | <span class="folha-dir">🌿</span> São Paulo
+            - Brasil</p>
+        <p>Última modificação: <img src="imagens/calendar.svg" alt="Iconde de um calendario"><span
+                id="ultimaModificacao"></span></p>
+
+    </footer>
+</body>
+
+</html>
