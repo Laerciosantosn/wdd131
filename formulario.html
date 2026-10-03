@@ -25,39 +25,32 @@
 
             <label>
                 Nome do produto
-                <select name="tema">
-                    <option value="">Escolha um produto</option>
-                    <option value="">Desenvolvimetno de Software</option>
-                    <option value="">Profissional Criativo</option>
-                    <option value="">Tecnologia da Informação</option>
-                    <option value="">Analista de Dados</option>
-                    <option value="">Construção</option>
-                    <option value="">Manufatra</option>
-                    <option value="">Negócios</option>
-                    <option value="">Segurança cibernetica</option>
+                <select id="produto" name="tema" required>
+                    <option value="Escolha um produto" disabled selected>Escolha um produto</option>
+                   
                 </select>
                 Classificação Geral
                 <div id="radio-container">
 
                     <label class="radio">
-                        ⭐<input type="radio" name="publico" value="1">
+                        &star;<input type="radio" name="estrela" value="1" id="star1" required>
                     </label>
                     <label class="radio">
-                        ⭐⭐<input type="radio" name="publico" value="2">
+                        &star;&star;<input type="radio" name="estrela" value="2" id="star2" >
                     </label>
                     <label class="radio">
-                        ⭐⭐⭐<input type="radio" name="publico" value="3">
+                        &star;&star;&star;<input type="radio" name="estrela" value="3" id="star3" >
                     </label>
                     <label class="radio">
-                        ⭐⭐⭐⭐<input type="radio" name="publico" value="4">
+                        &star;&star;&star;&star;<input type="radio" name="estrela" value="4" id="star4" >
                     </label>
                     <label class="radio">
-                        ⭐⭐⭐⭐⭐<input type="radio" name="publico" value="5e">
+                        &star;&star;&star;&star;&star;<input type="radio" name="estrela" value="5" id="star4" >
                     </label>
                 </div>
             </label>
             <label>Data de Instalação
-                <input type="date" name="data">
+                <input type="date" name="data-instalacao" id="data-instalacao" required value="data-instalacao">
             </label>
             <div>Quais recursos você achou úteis no produto?<br>(Marque todos que se aplicam)</div>
             <label class="edicao">
@@ -82,7 +75,7 @@
 
             <label for="nome">
                 <div>Seu Nome <span>(Opcional)</span></div>
-                <input type="text" name="nome">
+                <input type="text" name="nome" id="nome">
             </label>
             </label>
             <input type="submit" value="Publicar Avaliação">

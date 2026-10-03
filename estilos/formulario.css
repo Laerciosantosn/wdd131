@@ -162,8 +162,8 @@ span{
     height: 20px;
 }
 
-.fw1 input[type="radio"],
 .fw1 input[type="radio"] {
+    width: 55px;
     margin-right: 6px;
     display: flex;
     flex-direction: row;
