@@ -199,3 +199,8 @@ footer {
 footer span {
     color: #fff;
 }
+
+@media (max-width: 500px) {
+  
+}
+@media (min-width: 501px) {}

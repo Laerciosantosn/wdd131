@@ -35,23 +35,15 @@ const produtos = [
 ];
 
 
+
 const selectProduto = document.querySelector("#produto");
 
+selectProduto.setAttribute("required", "");
 
 produtos.forEach(produto => {
     const option = document.createElement("option");
     option.value = produto.id;
     option.textContent = produto.nome;
     selectProduto.appendChild(option);
+
 });
-
-
-// let contador =
-//     Number(localStorage.getItem("contadorAvaliacoes")) || 0;
-
-// contador++;
-
-// localStorage.setItem(
-//     "contadorAvaliacoes",
-//     contador
-// );

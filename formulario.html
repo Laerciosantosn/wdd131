@@ -23,10 +23,10 @@
     <main>
         <form method="GET" action="avaliacao.html" class="fw1">
 
-            <label>
+            <fieldset>
                 Nome do produto
                 <select id="produto" name="tema" required>
-                    <option value="Escolha um produto" disabled selected>Escolha um produto</option>
+                    <option value="Selecione um produto ..." disabled selected>Escolha um produto</option>
                    
                 </select>
                 Classificação Geral
@@ -45,12 +45,12 @@
                         &star;&star;&star;&star;<input type="radio" name="estrela" value="4" id="star4" >
                     </label>
                     <label class="radio">
-                        &star;&star;&star;&star;&star;<input type="radio" name="estrela" value="5" id="star4" >
+                        &star;&star;&star;&star;&star;<input type="radio" name="estrela" value="5" id="star5" >
                     </label>
                 </div>
-            </label>
+            </fieldset>
             <label>Data de Instalação
-                <input type="date" name="data-instalacao" id="data-instalacao" required value="data-instalacao">
+                <input type="date" name="data-instalacao" id="data-instalacao" required value="02/10/2026">
             </label>
             <div>Quais recursos você achou úteis no produto?<br>(Marque todos que se aplicam)</div>
             <label class="edicao">
@@ -67,16 +67,14 @@
             </label>
 
             <label for="mensagem">
-                <div>Avaliação Escrita<span>(Opcional)</span></div>
+                <p>Avaliação Escrita<span>(Opcional)</span></p>
                 <textarea name="mensagem" id="mensagem" rows="6" cols="40">
-
-                  </textarea>
+                </textarea>
             </label>
 
             <label for="nome">
-                <div>Seu Nome <span>(Opcional)</span></div>
+                <p>Seu Nome <span>(Opcional)</span></p>
                 <input type="text" name="nome" id="nome">
-            </label>
             </label>
             <input type="submit" value="Publicar Avaliação">
         </form>
