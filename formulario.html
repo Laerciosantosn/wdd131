@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios Web</title>
-    <meta name="description" content="descrição da pagina">
+    <meta name="description" content="Pagina de formulario para de avalição de produtos e satifação do usuario">
     <meta name="author" content="Laércio Santos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +26,7 @@
             <fieldset>
                 Nome do produto
                 <select id="produto" name="tema" required>
-                    <option value="" disabled selected>Selecione um produto ...</option>
-                   
+                    <option value="" disabled selected>Selecione um produto ...</option>   
                 </select>
                 Classificação Geral
                 <div id="radio-container">
@@ -42,18 +41,10 @@
                 <input type="date" name="data-instalacao" id="data-instalacao" required value="">
             </label>
             <div>Quais recursos você achou úteis no produto?<br>(Marque todos que se aplicam)</div>
-            <label class="edicao">
-                <input type="checkbox" name="edicao" value="sim">Edição de Foto
-            </label>
-            <label>
-                <input type="checkbox" name="programacao" value="sim">Programacao
-            </label>
-            <label>
-                <input type="checkbox" name="processador" value="sim">Pré-processador
-            </label>
-            <label>
-                <input type="checkbox" name="cliente" value="sim">Cliente FTP
-            </label>
+            <label class="edicao"><input type="checkbox" name="edicao" value="sim">Edição de Foto</label>
+            <label><input type="checkbox" name="programacao" value="sim">Programacao</label>
+            <label><input type="checkbox" name="processador" value="sim">Pré-processador</label>
+            <label><input type="checkbox" name="cliente" value="sim">Cliente FTP</label>
 
             <label for="mensagem">
                 Avaliação Escrita<span>(Opcional)</span>
