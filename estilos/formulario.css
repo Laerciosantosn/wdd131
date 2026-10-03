@@ -79,7 +79,7 @@ main {
     max-width: 400px;
     padding: 0 2%;
     min-height: 20rem;
-    background-color: #d5cdd5;
+    background-color: #f1ebf1;
     margin: 2% auto;
     border-radius: 6px;
 }
@@ -101,7 +101,7 @@ main {
 .fw1 label {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #000;
     font-size: 0.9rem;
 
 }
@@ -145,9 +145,6 @@ main {
     max-width: 400px;
 }
 
-span{
-    color: #445ba9;
-}
 .fw1 select,
 .fw1 input[type="date"] {
     margin-bottom: 1rem;
@@ -182,7 +179,7 @@ span{
 }
 
 .fw1 input:required {
-    border-bottom: solid 6px #9c2c13;
+    border-bottom: solid 6px #000;
 }
 
 .fw1 input:required:valid {
