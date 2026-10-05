@@ -1,0 +1,313 @@
+/* ==========================================
+   GRADE DE 3 COLUNAS (Planos)
+   ========================================== */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+.plans-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+/* Card de Plano */
+.plan-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Card em Destaque */
+.plan-card.featured {
+    border: 2px solid #ff4500;
+}
+
+.plan-card .badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* Preço */
+.plan-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+
+.plan-price .currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    vertical-align: top;
+    margin-right: 4px;
+}
+
+.plan-price .period {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+}
+
+/* Lista de Recursos */
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    text-align: center;
+}
+
+.plan-features li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #4a5568;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-card .btn-primary {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+
+/* ==========================================
+   CORREÇÃO DO HERO / BANNER DE PLANOS
+   ========================================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /* Mantém a largura padrão da index.html */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    padding: 0 20px;
+    /* Espaçamento interno de segurança para telas menores */
+    box-sizing: border-box;
+}
+
+.main-content {
+    width: 100%;
+}
+
+/* Container Principal da Hero */
+.hero,
+.hero-planos {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /* Altura do banner */
+    max-height: 650px;
+    display: flex;
+    align-items: center;
+    /* Centraliza o texto verticalmente no banner */
+    overflow: hidden;
+    /* Corta qualquer excesso para não quebrar a tela */
+    box-sizing: border-box;
+}
+
+.hero-planos .hero-content {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    /* Alinha com o menu e os cards */
+}
+
+/* Imagem de Fundo (Garante 100% de largura e altura) */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Preenche todo o espaço sem distorcer */
+    object-position: top center;
+    /* Exibe a parte superior da foto */
+    z-index: 1;
+    /* Fica na camada de fundo */
+}
+
+/* Camada Escura de Sobreposição (Overlay) */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 2;
+    /* Fica acima da imagem */
+}
+
+/* Conteúdo de Texto (Garante que fique por CIMA de tudo) */
+.hero-planos .hero-content {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    /* Alinha com o menu e os cards */
+}
+
+/* Estilização do Texto no Banner */
+.hero-planos .title-main {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-planos .text-main {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    margin: 0;
+    max-width: 500px;
+}
+
+
+/* ==========================================
+   SEÇÃO NEWSLETTER
+   ========================================== */
+.newsletter {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 60px 0;
+    border-top: 1px solid #222222;
+}
+
+.plans-section,
+.newsletter {
+    width: 100%;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.newsletter-text {
+    max-width: 500px;
+}
+
+.newsletter-text .title-section {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.newsletter-text .text-main {
+    color: #a0aec0;
+    margin-bottom: 0;
+}
+
+/* Formulário de E-mail */
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.newsletter-input:focus {
+    border-color: #ff4500;
+}
+
+
+
+/* ==========================================
+   RESPONSIVIDADE MÓVEL PARA OS PLANOS E NEWSLETTER
+   ========================================== */
+@media (max-width: 992px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .hero-planos {
+        height: 200px;
+    }
+
+    .hero-planos .title-main {
+        font-size: 3rem;
+    }
+
+    .hero-planos .text-main {
+        font-size: 0.85rem;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-input,
+    .newsletter-form .btn-primary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,513 @@
+:root {
+    --color-header: #2b2b2b;
+    --color-main: #1E1E1E;
+    --color-cards: #2A2A2A;
+    --color-btn: #ff4500;
+    --color-footer: #2b2b2b;
+    --color-text-main: #F5F5F5;
+
+    /* Fontes */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-text-main);
+    font-family: var(--font-inter);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Utilitários */
+.highlight {
+    color: var(--color-btn);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =========================================
+   TIPOGRAFIA ESPECÍFICA
+========================================= */
+.logo,
+.nav-desktop,
+.mobile-menu,
+.title-main,
+.title-section,
+.title-card,
+.btn-primary,
+.btn-outline,
+.subtitle,
+.list-title {
+    font-family: var(--font-poppins);
+}
+
+/* Texto principal, descrição dos cards, footer já estão herdando 'Inter' do body */
+
+/* =========================================
+   HEADER
+========================================= */
+.header {
+    background-color: var(--color-header);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.icon-logo {
+    width: 32px;
+    height: 32px;
+    color: var(--color-btn);
+}
+
+.nav-desktop {
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+/* DESTAQUE LINK MENU NAVEGAÇÂO */
+.nav-desktop a.active {
+    color: var(--color-btn);
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-btn);
+    padding-bottom: 4px;
+}
+
+
+.nav-desktop a:hover,
+.mobile-menu a:hover {
+    color: var(--color-btn);
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-main);
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
+.mobile-menu {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid var(--color-cards);
+    font-weight: 500;
+}
+
+.mobile-menu a.active {
+    color: #ff4500;
+    font-weight: 700;
+    background-color: rgba(255, 69, 0, 0.1);
+    /* Fundo sutil */
+    border-left: 4px solid #ff4500;
+    /* Borda lateral de destaque */
+}
+
+/* =========================================
+   MAIN SECTION E LAYOUTS (GRID)
+========================================= */
+.main-content {
+    flex-grow: 1;
+}
+
+section {
+    padding: 80px 0;
+    background-color: var(--color-main);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+/* Container da seção */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+/* Faz a tag <img> ocupar todo o fundo sem distorcer */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+/* Camada escura por cima da imagem */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+/* Mantém o texto e botões por cima da imagem e da camada escura */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+}
+
+
+.title-main {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.title-main span {
+    display: block;
+}
+
+.text-main {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-btn);
+    color: var(--color-main);
+    padding: 16px 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e55c00;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 1px solid #777;
+    color: #ccc;
+    padding: 8px 24px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-btn);
+    border-color: var(--color-btn);
+    color: var(--color-text-main);
+}
+
+/* =========================================
+   CARDS & CONTEÚDO
+========================================= */
+.programs-header {
+    margin-bottom: 64px;
+}
+
+.title-section {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.card {
+    background-color: var(--color-cards);
+    padding: 32px;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-btn);
+}
+
+.title-card {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.text-card {
+    color: #aaa;
+    margin-bottom: 24px;
+}
+
+/* =========================================
+   IMAGENS E LISTAS DE EXPERIÊNCIA
+========================================= */
+.image-wrapper {
+    background-color: var(--color-cards);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 4/3;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-left: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.list-item:hover {
+    border-color: var(--color-btn);
+}
+
+.list-title {
+    font-weight: 500;
+}
+
+/* =========================================
+   PROCEDURE SECTION
+========================================= */
+.procedure {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.subtitle {
+    display: block;
+    color: var(--color-btn);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+.footer {
+    background-color: var(--color-footer);
+    padding: 48px 0 24px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 24px;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 50%;
+    border-left: none;
+    /* Reset do estilo global de card */
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon:hover {
+    background-color: var(--color-btn);
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-text-main);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE (MOBILE)
+========================================= */
+
+
+
+@media (max-width: 768px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .hero {
+        /* dvh resolve o problema do corte da barra de endereço em navegadores mobile */
+        min-height: 100dvh;
+        padding: 60px 20px;
+        text-align: center;
+        /* Centraliza o texto para melhor alinhamento mobile */
+        justify-content: center;
+    }
+
+    .title-main {
+        font-size: 2.125rem;
+        /* Reduz o tamanho do título para não quebrar muitas linhas */
+        margin-bottom: 16px;
+    }
+
+    .text-main {
+        font-size: 1rem;
+        /* Ajusta a leitura do parágrafo */
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    /* Ajuste no botão para facilidade de clique no touch */
+    .btn-primary {
+        display: inline-block;
+        width: 100%;
+        max-width: 320px;
+        /* Largura total adaptada para telas pequenas */
+        padding: 14px 20px;
+        box-sizing: border-box;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-menu:not(.hidden) {
+        display: flex;
+    }
+
+    .title-main {
+        font-size: 2.25rem;
+    }
+
+    .title-main span {
+        display: inline;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 16px;
+    }
+
+    .title-main {
+        font-size: 1.75rem;
+        /* Reduz mais o título em telas muito estreitas */
+    }
+
+    .text-main {
+        font-size: 0.9rem;
+    }
+}
