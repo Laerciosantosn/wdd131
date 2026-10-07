@@ -1,28 +1,29 @@
 /* ==========================================
-   GRADE DE 3 COLUNAS (Planos)
+   PÁGINA DE PLANOS - ESTILIZAÇÃO ESPECÍFICA
    ========================================== */
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    align-items: stretch;
-}
 
 .plans-section {
     padding: 80px 0;
-    background-color: #ffffff;
+    width: 100%;
 }
 
-/* Card de Plano */
+.plans-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .plan-card {
-    border: 1px solid #e2e8f0;
+    width: 100%;
+    max-width: 380px;
     border-radius: 20px;
     padding: 40px 30px;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: var(--color-cards);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -33,18 +34,13 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Card em Destaque */
-.plan-card.featured {
-    border: 2px solid #ff4500;
-}
-
 .plan-card .badge {
     position: absolute;
     top: -14px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ff4500;
-    color: #ffffff;
+    background-color: var(--color-btn);
+    color: #000;
     padding: 4px 16px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -54,23 +50,21 @@
 }
 
 .plan-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--color-text-main);
     margin-bottom: 20px;
 }
 
-/* Preço */
 .plan-price {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 3.25rem;
     font-weight: 800;
-    color: #000000;
+    color: var(--color-text-main);
     margin-bottom: 24px;
     line-height: 1;
 }
-
 
 .plan-price .currency {
     font-size: 1.5rem;
@@ -85,7 +79,6 @@
     color: #666666;
 }
 
-/* Lista de Recursos */
 .plan-features {
     list-style: none;
     padding: 0;
@@ -94,9 +87,9 @@
 }
 
 .plan-features li {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
     font-size: 0.95rem;
-    color: #4a5568;
+    color: rgb(170, 170, 170);
     padding: 10px 0;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -107,100 +100,28 @@
 
 .plan-card .btn-primary {
     width: 100%;
-    box-sizing: border-box;
     display: block;
     text-align: center;
 }
 
-
-/* ==========================================
-   CORREÇÃO DO HERO / BANNER DE PLANOS
-   ========================================== */
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    /* Mantém a largura padrão da index.html */
-    margin: 0 auto;
-    /* Centraliza horizontalmente */
-    padding: 0 20px;
-    /* Espaçamento interno de segurança para telas menores */
-    box-sizing: border-box;
-}
-
-.main-content {
-    width: 100%;
-}
-
-/* Container Principal da Hero */
-.hero,
+/* Modificações do Hero específicas para Planos */
 .hero-planos {
-    position: relative;
-    width: 100%;
     height: 650px;
-    /* Altura do banner */
     max-height: 650px;
-    display: flex;
-    align-items: center;
-    /* Centraliza o texto verticalmente no banner */
-    overflow: hidden;
-    /* Corta qualquer excesso para não quebrar a tela */
-    box-sizing: border-box;
+    min-height: auto;
 }
 
-.hero-planos .hero-content {
-    position: relative;
-    z-index: 3;
-    color: #ffffff;
-    width: 100%;
-    margin: 0 auto;
-    /* Alinha com o menu e os cards */
-}
-
-/* Imagem de Fundo (Garante 100% de largura e altura) */
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Preenche todo o espaço sem distorcer */
+.hero-planos .hero-bg {
     object-position: top center;
-    /* Exibe a parte superior da foto */
-    z-index: 1;
-    /* Fica na camada de fundo */
 }
 
-/* Camada Escura de Sobreposição (Overlay) */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.hero-planos .hero-overlay {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
-    z-index: 2;
-    /* Fica acima da imagem */
 }
 
-/* Conteúdo de Texto (Garante que fique por CIMA de tudo) */
 .hero-planos .hero-content {
-    position: relative;
-    z-index: 3;
-    color: #ffffff;
     width: 100%;
     margin: 0 auto;
-    /* Alinha com o menu e os cards */
-}
-
-/* Estilização do Texto no Banner */
-.hero-planos .title-main {
-    color: #ffffff;
-    font-weight: 800;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
 }
 
 .hero-planos .text-main {
@@ -210,31 +131,31 @@
     max-width: 500px;
 }
 
-
-/* ==========================================
-   SEÇÃO NEWSLETTER
-   ========================================== */
+/* Seção Newsletter */
 .newsletter {
     background-color: #111111;
     color: #ffffff;
     padding: 60px 0;
     border-top: 1px solid #222222;
-}
-
-.plans-section,
-.newsletter {
     width: 100%;
 }
 
 .newsletter-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .newsletter-text {
-    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .newsletter-text .title-section {
@@ -243,11 +164,10 @@
 }
 
 .newsletter-text .text-main {
-    color: #a0aec0;
-    margin-bottom: 0;
+    color: var(--color-text-muted);
+    margin: 0 auto;
 }
 
-/* Formulário de E-mail */
 .newsletter-form {
     display: flex;
     gap: 12px;
@@ -262,21 +182,22 @@
     border: 1px solid #333333;
     background-color: #1a1a1a;
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
     font-size: 1rem;
     outline: none;
     transition: border-color 0.2s;
 }
 
 .newsletter-input:focus {
-    border-color: #ff4500;
+    border-color: var(--color-btn);
 }
 
+.newsletter-form .btn-primary {
+    display: block;
+    text-align: center;
+}
 
-
-/* ==========================================
-   RESPONSIVIDADE MÓVEL PARA OS PLANOS E NEWSLETTER
-   ========================================== */
+/* Responsividade Específica de Planos */
 @media (max-width: 992px) {
     .grid-3 {
         grid-template-columns: 1fr;
@@ -294,11 +215,6 @@
 
     .hero-planos .text-main {
         font-size: 0.85rem;
-    }
-
-    .newsletter-container {
-        flex-direction: column;
-        text-align: center;
     }
 
     .newsletter-form {
