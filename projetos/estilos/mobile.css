@@ -22,7 +22,7 @@ td {
 }
 
 h1,
-caption, strong {
+caption, strong, th {
     font-family: var(--font-poppins);
 }
 
