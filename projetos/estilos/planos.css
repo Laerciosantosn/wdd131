@@ -1,11 +1,9 @@
-/* ==========================================
-   PÁGINA DE PLANOS - ESTILIZAÇÃO ESPECÍFICA
-   ========================================== */
-
 .plans-section {
     padding: 80px 0;
     width: 100%;
 }
+
+
 
 .plans-section .container {
     display: flex;
@@ -53,7 +51,7 @@
     font-family: var(--font-poppins);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-text-main);
+    color: var(--color-btn);
     margin-bottom: 20px;
 }
 
@@ -76,7 +74,7 @@
 .plan-price .period {
     font-size: 1rem;
     font-weight: 500;
-    color: #666666;
+    color: #fff;
 }
 
 .plan-features {
@@ -104,7 +102,6 @@
     text-align: center;
 }
 
-/* Modificações do Hero específicas para Planos */
 .hero-planos {
     height: 650px;
     max-height: 650px;
@@ -131,7 +128,6 @@
     max-width: 500px;
 }
 
-/* Seção Newsletter */
 .newsletter {
     background-color: #111111;
     color: #ffffff;
@@ -197,7 +193,6 @@
     text-align: center;
 }
 
-/* Responsividade Específica de Planos */
 @media (max-width: 992px) {
     .grid-3 {
         grid-template-columns: 1fr;
@@ -206,7 +201,7 @@
     }
 
     .hero-planos {
-        height: 200px;
+        height: 400px;
     }
 
     .hero-planos .title-main {

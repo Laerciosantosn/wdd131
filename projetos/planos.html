@@ -25,7 +25,7 @@
                 <img src="imagens/logo_academia.svg" alt="Logo da academia Master Life">
                 <span>Master Life - GYN</span>
             </div>
-            
+
             <!-- Menu Desktop -->
             <nav class="nav-desktop">
                 <a href="index.html">Home</a>
@@ -52,8 +52,10 @@
 
     <main class="main-content">
         <section class="hero hero-planos">
-            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop"
-                alt="Equipamentos da Academia Master Life" class="hero-bg">
+            <source media="(min-width: 1000px)" srcset="imagens/hero-plano-1500x1000.webp">
+            <source media="(min-width: 500px)" srcset="imagens/hero-plano-750x500.webp">
+            <img src="imagens/hero-plano.webp"
+                alt="Equipamentos da Academia Master Life" class="hero-bg" loading="eager" fetchpriority=high>
             <div class="hero-overlay"></div>
 
             <div class="container hero-content">

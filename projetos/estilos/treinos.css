@@ -121,7 +121,7 @@
     padding: 8px 16px;
     background-color: var(--color-cards);
     border: 2px solid var(--color-btn);
-    color: var(--color-btn);
+    color: var(--color-text-main);
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
